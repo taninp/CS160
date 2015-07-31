@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".TourListActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+    <Button
+        android:id="@+id/near_me"
+        android:text="NEAR ME"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ff888888"/>
+    <Button
+        android:id="@+id/rating"
+        android:text="RATING"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ff888888"/>
+    <Button
+        android:id="@+id/duration"
+        android:text="DURATION"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ff888888"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tour_list"
+        android:paddingTop="80dp"/>
+</RelativeLayout>
